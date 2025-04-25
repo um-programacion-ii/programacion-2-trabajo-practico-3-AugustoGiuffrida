@@ -1,6 +1,8 @@
 # Compiled class file
 *.class
 
+*pom.xml
+*.idea
 # Log file
 *.log
 
