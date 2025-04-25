@@ -1,5 +1,3 @@
-package com.GestiondeBiblioteca.app;
-
 /**
  * Hello world!
  */
