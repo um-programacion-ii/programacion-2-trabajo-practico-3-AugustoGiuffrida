@@ -55,4 +55,8 @@ public class Catalogo {
                 .filter(libro -> libro.getEstado().equals(EstadoLibro.DISPONIBLE))
                 .collect(Collectors.toList());
     }
+
+    public int obtenerCantidad(){
+        return libros.size();
+    }
 }
