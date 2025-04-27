@@ -3,19 +3,20 @@ package modelos;
 import enums.EstadoLibro;
 import enums.EstadoPrestamo;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Prestamo {
     private Libro libro;
-    private Date fechaInicio;
-    private Date fechaVencimiento;
+    private LocalDate fechaInicio;
+    private LocalDate fechaVencimiento;
     private EstadoPrestamo estado;
 
-    public Prestamo(Libro libro, Date fechaInicio, Date fechaVencimiento, EstadoPrestamo estado){
+    public Prestamo(Libro libro){
         this.libro = libro;
-        setFechaInicio(fechaInicio);
-        setFechaVencimiento(fechaVencimiento);
-        setEstado(estado);
+        this.fechaInicio = LocalDate.now();
+        this.fechaInicio = fechaInicio.plusDays(7);
+        this.estado = EstadoPrestamo.ACTIVO;
     }
 
     //getters
@@ -23,11 +24,11 @@ public class Prestamo {
         return this.libro;
     }
 
-    public Date getFechaInicio(){
+    public LocalDate getFechaInicio(){
         return this.fechaInicio;
     }
 
-    public Date getFechaVencimiento(){
+    public LocalDate getFechaVencimiento(){
         return this.fechaVencimiento;
     }
 
@@ -36,11 +37,11 @@ public class Prestamo {
     }
 
     //setters
-    public void setFechaInicio(Date fechaInicio){
+    public void setFechaInicio(LocalDate fechaInicio){
         this.fechaInicio = fechaInicio;
     }
 
-    public void setFechaVencimiento(Date fechaVencimiento){
+    public void setFechaVencimiento(LocalDate fechaVencimiento){
         this.fechaVencimiento = fechaVencimiento;
     }
 
