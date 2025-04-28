@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSistemaPrestamo
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.731 s <<< FAILURE! -- in TestSistemaPrestamo
+TestSistemaPrestamo.TestDevolverLibroDisponible -- Time elapsed: 0.012 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <exepciones.LibroExepcion> but was: <exepciones.PrestamoExepcion>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
+	at TestSistemaPrestamo.TestDevolverLibroDisponible(TestSistemaPrestamo.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: exepciones.PrestamoExepcion: No se encontró un préstamo para este libro
+	at sistemas.SistemaPrestamos.lambda$devolverLibro$1(SistemaPrestamos.java:40)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at sistemas.SistemaPrestamos.devolverLibro(SistemaPrestamos.java:40)
+	at TestSistemaPrestamo.lambda$TestDevolverLibroDisponible$2(TestSistemaPrestamo.java:82)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
