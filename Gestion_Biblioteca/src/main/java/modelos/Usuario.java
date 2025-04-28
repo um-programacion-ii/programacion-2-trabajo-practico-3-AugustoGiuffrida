@@ -26,7 +26,7 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public void registrarPrestamos(Prestamo prestamo){
+    public void agregarPrestamos(Prestamo prestamo){
         prestamos.add(prestamo);
     }
 }
