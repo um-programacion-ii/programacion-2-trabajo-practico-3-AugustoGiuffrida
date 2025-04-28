@@ -1,0 +1,12 @@
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/App.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/enums/EstadoLibro.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/enums/EstadoPrestamo.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/exepciones/LibroExepcion.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/exepciones/PrestamoExepcion.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/exepciones/UsuarioExepcion.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/modelos/Catalogo.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/modelos/Libro.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/modelos/Prestamo.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/modelos/Usuario.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/sistemas/SistemaPrestamos.java
+/home/altair/Documentos/Programacion_2/TrabajoPractico_3/Gestion_Biblioteca/src/main/java/sistemas/SistemaUsuarios.java
