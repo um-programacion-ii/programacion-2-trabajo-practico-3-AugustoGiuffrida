@@ -11,9 +11,69 @@
 - **Recomendación:** Se sugiere leer la consigna completa antes de comenzar con el desarrollo para tener una visión general del proyecto y planificar adecuadamente el trabajo.
 
 ## Identificación del Alumno
-- **Nombre:** [Nombre del Alumno]
-- **Apellido:** [Apellido del Alumno]
-- **Legajo:** [Número de Legajo]
+- **Nombre:** Augusto 
+- **Apellido:** Giuffrida
+- **Legajo:** 60137
+
+## Implementación Java
+
+### Clases Principales Implementadas
+
+#### `Libro`
+- Modela un libro con los atributos: ISBN, título, autor y estado (`DISPONIBLE` o `PRESTADO`).
+- Métodos principales: constructor, getters, setters, cambio de estado.
+- Pruebas: creación de libros válidos, validación de estado inicial, cambio de estado.
+
+#### `Catalogo`
+- Gestiona una colección de libros.
+- Métodos: agregarLibro, buscarPorIsbn, obtenerLibrosDisponibles
+- Pruebas: búsqueda por ISBN, múltiples libros, búsquedas fallidas.
+
+#### `Prestamo`
+- Representa un préstamo con fecha y libro asociado.
+- Se utiliza para el historial de préstamos de un usuario.
+
+#### `SistemaPrestamos`
+- Se encarga de registrar préstamos.
+- Métodos: registrarPrestamo, devolverLibro, buscarPrestamoPorIsbn, getPrestamos
+- Verifica disponibilidad y cambia el estado del libro a `PRESTADO`.
+- Lanza excepciones si el libro ya está prestado.
+- Pruebas: con mocks de `Catalogo`, verificación de interacciones, excepción por libro no disponible.
+
+#### `Usuario`
+- Modela un usuario con nombre y un historial de préstamos.
+- Métodos: agregar préstamo, obtener historial.
+- Pruebas: creación, historial vacío y con préstamos.
+
+#### `SistemaUsuarios`
+- Gestiona usuarios y delega la solicitud de préstamos al `SistemaPrestamos`.
+- Métodos: agregarUsuario, eliminarUsuario, buscarUsuario, solicitarPrestamo
+- Lanza excepciones propias si el préstamo falla.
+- Pruebas: múltiples mocks, manejo de excepciones, validación de historial.
+
+
+### Enums y Excepciones
+
+#### `EstadoLibro`
+- Enum que representa el estado de un libro:
+   - `DISPONIBLE`
+   - `PRESTADO`
+- Utilizado para controlar la lógica de disponibilidad.
+
+#### `PrestamoExepcion`
+- Excepción personalizada lanzada si:
+   - El libro ya está prestado
+   - Ocurre un error al registrar el préstamo
+
+#### `UsuarioExepcion`
+- Excepción personalizada lanzada si:
+   - No se encuentra el usuario o no existe el usuario.
+
+#### `LibroExepcion`
+- Excepción personalizada lanzada por `LibroExepcion` si:
+   - No se encuentra el libro o no existe dentro del catalogo.
+   - Si el libro ya existe dentro del catalogo.
+
 
 ## Importante
 - La rama `main` está protegida y no se pueden hacer commits directos sobre ella
