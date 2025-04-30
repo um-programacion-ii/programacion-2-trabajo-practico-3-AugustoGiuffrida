@@ -40,7 +40,7 @@ mejorar la cobertura de casos límite y asegurar el comportamiento esperado del 
 ## Tests de `catalogo`
 
 <p align="left">
-  <img src="media/catalogoTest.png" alt="Java Runtime Environment">
+  <img src="media/catalogoTest.png" alt="Tests de catalogo">
 </p>
 
 ---
@@ -48,7 +48,7 @@ mejorar la cobertura de casos límite y asegurar el comportamiento esperado del 
 ## Tests de `Libro`
 
 <p align="left">
-  <img src="media/libroTest.png" alt="Java Runtime Environment">
+  <img src="media/libroTest.png" alt="Tests de Libro">
 </p>
 
 ---
@@ -56,7 +56,7 @@ mejorar la cobertura de casos límite y asegurar el comportamiento esperado del 
 ## Tests de `sistemaPrestamo`
 
 <p align="left">
-  <img src="media/sistemaUsuariosTests.png" alt="Java Runtime Environment">
+  <img src="media/sistemaUsuariosTests.png" alt="Tests de sistemaPrestamo">
 </p>
 
 ---
@@ -64,7 +64,7 @@ mejorar la cobertura de casos límite y asegurar el comportamiento esperado del 
 ## Test de `sistemaUsuario`
 
 <p align="left">
-  <img src="media/sistemaUsuarioTest.png" alt="Java Runtime Environment">
+  <img src="media/sistemaUsuarioTest.png" alt="est de sistemaUsuario">
 </p>
 
 ---
